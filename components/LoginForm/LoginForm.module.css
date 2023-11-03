@@ -1,0 +1,28 @@
+.submitBtn{
+    width: stretch;
+    background-color:var(--PrimaryColor) ;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color var(--transitionTime);
+    padding: var(--InputPaddingTopAndBottom) var(--inputPaddingLeftAndRight);
+}.errorText{
+    color: var(--error) !important;
+    font-size: var(--tiny) !important;
+}
+.links{
+    color: var(--PrimaryColor);
+    font-size: var(--small);
+}
+.submitBtn:hover{
+    background-color: var(--darkenedPrimary);
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    align-items: center;
+}

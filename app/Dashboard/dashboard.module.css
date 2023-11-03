@@ -1,0 +1,7 @@
+.main{
+    padding-bottom: 100px;
+}
+.dashboardBody{
+    margin-left: var(--sideBarWidth);
+    padding: 0px 40px;
+}

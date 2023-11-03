@@ -1,0 +1,22 @@
+.link, .active{
+    color: var(--themeNatural);
+    display: flex;
+    padding: 10px 25px;
+    width: stretch;
+    border-radius: 4px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: var(--medium);
+    transition: background var(--transitionTime);
+}
+.active{
+    background-color: var(--PrimaryColor);
+}.colorBox{
+    border-radius: 5px;
+}.link img, .colorBox{
+    width: 18px;
+    height: 18px;
+}.link:hover{
+    background-color: var(--hoverColor);
+}

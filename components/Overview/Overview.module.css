@@ -1,0 +1,6 @@
+.overview{
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--gap)*2);
+    margin-top: 20px;
+}

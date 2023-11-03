@@ -1,0 +1,53 @@
+.inputParent{
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.inputParent label{
+    position: absolute;
+    margin-left: var(--inputPaddingLeftAndRight);
+    font-size: var(--tiny);
+    transition: translate var(--transitionTime), opacity var(--transitionTime) ;
+    background-color: var(--InputBoxColor);
+    opacity: 0;
+    pointer-events: none;
+    color: var(--InputBorderColor);
+}
+.inputParent input{
+    padding: var(--InputPaddingTopAndBottom) var(--inputPaddingLeftAndRight);
+    outline: none;
+    border: 1px solid var(--InputBorderColor);
+    background-color: var(--InputBoxColor);
+    border-radius:4px ;
+    color: var(--InputTextColor);
+    width: stretch;
+}
+
+.inputParent input:focus + label{
+    translate: 0 -20px;
+    opacity: 1;
+    color:var(--PrimaryColor);
+    padding: 0px 5px;
+}
+
+.inputParent input:focus{
+    border-color:var(--PrimaryColor) ;
+}
+.inputParent input:not(input:placeholder-shown) + label{
+    translate: 0 -20px;
+    opacity: 1;
+    padding: 0px 5px;
+}
+
+
+.inputParent input::placeholder{
+    transition: opacity var(--transitionTime);
+    color: var(--InputBorderColor);
+}
+
+.inputParent input:focus::placeholder{
+  opacity: 0;
+}

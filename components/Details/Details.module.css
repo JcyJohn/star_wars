@@ -1,0 +1,9 @@
+.detailContainer{
+    display: flex;
+    gap: 20px;
+}.contents{
+    font-size: var(--medium);
+    color: var(--headings);
+    font-weight: 600px;
+    margin-top: 5px;
+}

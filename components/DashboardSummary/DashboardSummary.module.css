@@ -1,0 +1,32 @@
+.dashBoardSummaryContainer{
+    width: 208px;
+    height: 130px;
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: translate var(--transitionTime);
+    box-shadow: -2px 2px 0.5rem  rgba(0, 0, 0, 0.204);
+}
+.dashBoardSummaryContainer:hover{
+    translate: 0 3px;
+}
+.dashBoardSummaryContainer h1{
+    font-size: var(--medium);
+}
+.topContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colorBox{
+    height: 27px;
+    width: 26px;
+    border-radius: 5px;
+}
+.dashBoardSummaryContainer p{
+    color: #00992B;
+    font-size: 9px;
+}
