@@ -16,7 +16,6 @@ const allImageUrl:GeneralObject ={
     Species:"/Images/species.png"
 }
 const getDetailsKeys = (page:string) => {
-    console.log(page)
     if(allKeys[page]){
         return allKeys[page]
     }else{

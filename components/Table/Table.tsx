@@ -30,7 +30,7 @@ export default ({tableTitle,tableCenteredItem,tableKeys,tableData}:tableProps) =
             setMasterCheck({status:checkedStatus,updateAll:true})
             setCheckBoxData({id:id, checked:checkedStatus})
         }else{
-            //Remember to not pass master when sending data to server
+            // Remember to not pass master when sending data to server
             // Master is used locally for validation
             if(checkedStatus === false && checkBoxData["master"]){
                 setMasterCheck({status:false,updateAll:false})

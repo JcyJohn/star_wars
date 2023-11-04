@@ -1,4 +1,3 @@
-
 interface validatorProps{
     email?:string,
     password?:string,
@@ -6,9 +5,7 @@ interface validatorProps{
 }
 
 const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-// const strongPassword = new RegExp(
-//     "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})"
-// )
+
 const passwordTest = new RegExp("^(?=.*[A-z])(?=.*[0-9])(?=.{8,})")
 
 export default ({email = "",password = "",setErrorMessage}:validatorProps) =>{

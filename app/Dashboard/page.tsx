@@ -11,8 +11,6 @@ export default async () => {
     ]
 
     const tableKeys = ["title","release_date","director","episode_id","producer"]
-
-
     const tableData = await GetPages("films")
 
 

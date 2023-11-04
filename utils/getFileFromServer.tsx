@@ -21,7 +21,6 @@ const GetPages = async  (page:string)=>{
     }
     const data:pageData= await res.json()
     addAllIds(data["results"]);
-    // console.log(data["results"])
     return data["results"]
 }
 
